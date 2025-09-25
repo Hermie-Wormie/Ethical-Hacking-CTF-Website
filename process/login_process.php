@@ -58,7 +58,7 @@ try {
                 echo "<!-- DEBUG: Admin detected, redirecting to admin page -->";
             }
             $_SESSION['admin_logged_in'] = true; // Set admin session flag
-            header("Location: ../admin/admin_index.php");
+            header("Location: ../admin/dashboard.php");
             exit();
         } else {
             // Regular user - redirect to welcome page

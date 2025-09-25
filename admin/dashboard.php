@@ -2,11 +2,6 @@
 session_start();
 
 // Check if admin is logged in
-// if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== true) {
-//     http_response_code(404);
-//     die("<h1>404 Not Found</h1><p>The page you requested does not exist.</p>");
-// }
-// 
 if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== true) {
     http_response_code(404);
     echo "<h1>Not Found</h1>";
@@ -28,6 +23,7 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tru
         .nav { margin-bottom: 20px; }
         .nav a { margin-right: 15px; text-decoration: none; color: #007bff; }
         .nav a:hover { text-decoration: underline; }
+        .success { background: #d4edda; color: #155724; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
     </style>
 </head>
 <body>
@@ -37,7 +33,7 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tru
             <a href="manage_users.php">Manage Users</a>
             <a href="site_settings.php">Site Settings</a>
             <a href="view_logs.php">View Logs</a>
-            <a href="adminlogout.php">Logout</a>
+            <a href="../logout.php">Logout</a>
         </div>
         <p>This is your admin dashboard. Use the navigation above to manage the website.</p>
     </div>

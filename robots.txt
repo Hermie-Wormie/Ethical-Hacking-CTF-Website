@@ -1,0 +1,2 @@
+User-agent : *
+Disallow: /$2a$12$mxruOlDwJiPA2l7ZOS/HTu.9juiplPf2ivEOYmXgti5ihylmcnFlO

@@ -1,0 +1,18 @@
+# Deny all direct access to this folder
+Order Deny,Allow
+Deny from all
+
+# Allow access only through PHP authentication
+<Files "*">
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+# Block directory listing
+Options -Indexes
+
+# Disable script execution
+<FilesMatch "\.(php|php3|php4|php5|phtml|pl|py|jsp|asp|sh|cgi)$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>

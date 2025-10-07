@@ -1,0 +1,8 @@
+REATE TABLE users (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	username VARCHAR(50),
+	password VARCHAR(255)
+);
+ 
+INSERT INTO users (username, password) VALUES
+('worker17', $2a$12$dYgrFsqCDS7WnhaEasaD4u/mfC8U9RXuAm13wMReIpJsDQyhZJ3Tq);

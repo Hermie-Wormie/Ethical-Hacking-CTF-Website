@@ -1,0 +1,13 @@
+Options -Indexes
+
+# Block direct access to sensitive files (they must go through index.php)
+<FilesMatch "\.(bak|sql|txt|log|conf)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Allow index.php to be accessed
+<Files "index.php">
+    Allow from all
+</Files>
+
